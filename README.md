@@ -1,37 +1,30 @@
-# LineWatch – Quản lý dây chuyền
+# Bài kiểm tra giữa kỳ – LineWatch
 
-## Thông tin bài làm
+## 1. Tên đề tài
+BTL-14 – LineWatch: Theo dõi ca sản xuất và sự cố dây chuyền.
 
-- **Đề tài:** BTL-14 – LineWatch – Theo dõi ca sản xuất và sự cố dây chuyền.
-- **Trang thực hiện:** Quản lý dây chuyền (trang 12).
-- **Đối tượng sử dụng:** Quản trị viên.
-- **Mục đích:** Xem các dây chuyền, máy thuộc từng dây chuyền và trạng thái; tạo thêm dây chuyền mới.
+## 2. Tên trang đã thực hiện
+Quản lý dây chuyền (trang 12 trong bản thiết kế).
 
-## Chức năng
+## 3. Mục đích của trang
+Giúp quản trị viên xem danh sách dây chuyền sản xuất, các máy thuộc từng dây chuyền và trạng thái hoạt động; đồng thời tạo thêm dây chuyền mới.
 
-- Hiển thị ba dây chuyền mẫu: L01 và L03 đang hoạt động, L02 tạm dừng.
-- Mở/đóng biểu mẫu; nhập mã, tên, các mã máy và chọn trạng thái khi tạo dây chuyền.
-- Kiểm tra dữ liệu, báo mã trùng và thêm dây chuyền vào danh sách.
-- Bật/tắt chế độ tối và hiển thị cơ bản trên điện thoại.
+## 4. Các chức năng chính
+- Hiển thị các dây chuyền mẫu, mã máy và trạng thái đang hoạt động hoặc tạm dừng.
+- Mở biểu mẫu tạo dây chuyền; nhập mã, tên, danh sách mã máy và chọn trạng thái.
+- Kiểm tra thông tin bắt buộc, phát hiện mã dây chuyền trùng và thêm dây chuyền vào danh sách.
+- Bật hoặc tắt chế độ tối.
 
-**Phạm vi hiện tại:** Nút Chỉnh sửa chưa có chức năng. Dữ liệu mới chỉ tồn tại trong phiên trang đang mở; tải lại trang sẽ trở về dữ liệu mẫu.
+Nút **Chỉnh sửa** hiện chỉ có giao diện, chưa xử lý. Dây chuyền mới được thêm trên trang đang mở và sẽ mất khi tải lại.
 
-## Công nghệ và cách chạy
+## 5. Công nghệ sử dụng
+HTML, CSS và JavaScript thuần.
 
-HTML, CSS và JavaScript thuần. Mở `index.html` trong trình duyệt hoặc bằng Live Server.
+## 6. Link Figma
+https://www.figma.com/design/Hb7wMQduLWJliOzpJWGR98/BTL-14-LineWatch-%25E2%2580%2593-Full-UI-Prototype?node-id=2-2&p=f&t=fagY6XeNB9uPjHCF-0
 
-## Cấu trúc
+## 7. Link video
+https://youtu.be/vpizwEpZ7Zk
 
-```text
-index.html
-css/style.css
-js/main.js
-assets/
-README.md
-```
-
-## Liên kết nộp bài
-
-- **Figma:** https://www.figma.com/design/Hb7wMQduLWJliOzpJWGR98/BTL-14-LineWatch-%25E2%2580%2593-Full-UI-Prototype?node-id=2-2&p=f&t=fagY6XeNB9uPjHCF-0
-- **GitHub cá nhân:** https://github.com/Nguyensiuuu/CSE122-LineWatch-KiemTraGiuaKy
-- **Video YouTube:** https://youtu.be/vpizwEpZ7Zk
+## 8. Link GitHub
+https://github.com/Nguyensiuuu/CSE122-LineWatch-KiemTraGiuaKy
