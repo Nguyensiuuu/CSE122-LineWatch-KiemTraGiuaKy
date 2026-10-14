@@ -1,0 +1,522 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    --nen: #f5f3ec;
+    --the: #ffffff;
+    --chu: #24312a;
+    --phu: #68746a;
+    --vien: #d6ded2;
+    --chip: #f1f2ec;
+    --nen-trangthai: #e8f0e6;
+    --chu-trangthai: #557c58;
+    --hover: #e9f1e8;
+    background: var(--nen);
+    color: var(--chu);
+    font-family: Arial, sans-serif;
+}
+
+body.toi {
+    --nen: #121c17;
+    --the: #223329;
+    --chu: #f1f5ef;
+    --phu: #b8c7ba;
+    --vien: #4d6554;
+    --chip: #30483a;
+    --nen-trangthai: #365341;
+    --chu-trangthai: #ceead4;
+    --hover: #35543f;
+}
+
+.bocuc {
+    display: grid;
+    grid-template-columns: 224px minmax(0, 1fr);
+    min-height: 100vh;
+}
+
+.thanhben {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 24px 14px 70px;
+    background: #192a23;
+    color: white;
+}
+
+.thuonghieu {
+    padding: 0 10px;
+}
+
+.thuonghieu h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.thuonghieu p {
+    margin: 6px 0 18px;
+    color: #b2bfb2;
+    font-size: 10px;
+}
+
+.vaitro {
+    display: inline-block;
+    padding: 7px 11px;
+    border-radius: 14px;
+    background: #e9f1e8;
+    color: #32694f;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 24px;
+}
+
+.muc {
+    padding: 14px 18px;
+    border-radius: 7px;
+    color: #c3cec0;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background: #385343;
+    color: white;
+}
+
+.menu .dangchon {
+    border-left: 4px solid #32694f;
+    background: #2c4737;
+    color: white;
+    padding-left: 14px;
+}
+
+.thongtinca {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+    padding: 0 10px;
+    font-size: 12px;
+}
+
+.thongtinca p {
+    margin: 0;
+    color: #78857a;
+    font-size: 10px;
+}
+
+.thongtinca span {
+    color: #b2bfb2;
+    font-size: 11px;
+}
+
+.benphai {
+    min-width: 0;
+}
+
+.thanhtren {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 72px;
+    padding: 0 20px 0 32px;
+    border-bottom: 1px solid var(--vien);
+    background: var(--the);
+}
+
+.thanhtren h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.taikhoan {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 11px;
+}
+
+.ngay {
+    color: var(--phu);
+}
+
+.thongbao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--chip);
+    color: #b2574e;
+    font-weight: bold;
+}
+
+.nguoidung {
+    padding: 11px 12px;
+    border: 1px solid var(--vien);
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.nguoidung strong {
+    margin-right: 8px;
+    color: #32694f;
+}
+
+body.toi .nguoidung strong {
+    color: #c4e1c7;
+}
+
+body.toi .thongbao {
+    color: #f0a69d;
+}
+
+.noidung {
+    padding: 24px 44px 40px 32px;
+}
+
+.tieude {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 1140px;
+    margin-bottom: 20px;
+}
+
+.tieude h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.tieude p {
+    margin: 0;
+    color: var(--phu);
+    font-size: 11px;
+}
+
+.nut {
+    font-family: inherit;
+    height: 38px;
+    padding: 0 16px;
+    border-radius: 7px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nuttao {
+    border: 1px solid #32694f;
+    background: #32694f;
+    color: white;
+    white-space: nowrap;
+}
+
+.nuttao:hover {
+    background: #244b39;
+}
+
+.nutphu {
+    align-self: center;
+    width: 120px;
+    border: 1px solid var(--vien);
+    background: var(--the);
+    color: var(--chu);
+}
+
+.nutphu:hover {
+    background: var(--hover);
+    border-color: #32694f;
+    color: #32694f;
+}
+
+body.toi .nutphu:hover {
+    color: #e8f0e6;
+}
+
+.nut:active {
+    filter: brightness(.9);
+}
+
+.nut:focus-visible,
+.menu a:focus-visible {
+    outline: 2px solid #a97930;
+    outline-offset: 3px;
+}
+
+.danhsach {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    max-width: 1140px;
+}
+
+.the-daychuyen {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 172px;
+    padding: 20px 56px 20px 22px;
+    border: 1px solid var(--vien);
+    border-left: 5px solid #557c58;
+    border-radius: 10px;
+    background: var(--the);
+}
+
+.the-daychuyen.daychuyen-tamdung {
+    border-left-color: #a97930;
+}
+
+.chitiet {
+    min-width: 0;
+}
+
+.hangdau {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.hangdau h3 {
+    min-width: 140px;
+    margin: 0;
+    font-size: 15px;
+}
+
+.trangthai {
+    padding: 7px 11px;
+    border-radius: 14px;
+    background: var(--nen-trangthai);
+    color: var(--chu-trangthai);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.trangthai.tamdung {
+    background: #f7efdc;
+    color: #a97930;
+}
+
+body.toi .trangthai.tamdung {
+    background: #4a3b25;
+    color: #f3d39c;
+}
+
+.soluong {
+    margin: 6px 0 26px;
+    color: var(--phu);
+    font-size: 11px;
+}
+
+.nhanmay {
+    margin: 0 0 12px;
+    color: var(--phu);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.cacmay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.cacmay span {
+    padding: 7px 11px;
+    border-radius: 14px;
+    background: var(--chip);
+    color: var(--phu);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* Công tắc sáng/tối ở thanh trên */
+.congtac {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.congtac input {
+    position: absolute;
+    opacity: 0;
+}
+
+.duonggat {
+    position: relative;
+    width: 40px;
+    height: 22px;
+    border-radius: 20px;
+    background: #a8b4aa;
+}
+
+.duonggat::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    transition: transform .2s;
+}
+
+.congtac input:checked + .duonggat {
+    background: #32694f;
+}
+
+.congtac input:checked + .duonggat::after {
+    transform: translateX(18px);
+}
+
+.congtac input:focus-visible + .duonggat {
+    outline: 2px solid #a97930;
+    outline-offset: 3px;
+}
+
+/* Biểu mẫu tạo dây chuyền */
+.khungtao {
+    max-width: 1140px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid var(--vien);
+    border-radius: 10px;
+    background: var(--the);
+}
+
+.khungtao h3 {
+    margin: 0 0 16px;
+    font-size: 16px;
+}
+
+#formtao {
+    display: grid;
+    gap: 14px;
+}
+
+.truong {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.truong label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.truong input,
+.truong select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid var(--vien);
+    border-radius: 7px;
+    background: var(--the);
+    color: var(--chu);
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.truong input:focus-visible,
+.truong select:focus-visible {
+    outline: 2px solid #32694f;
+    outline-offset: 1px;
+}
+
+.hanhdong {
+    display: flex;
+    gap: 10px;
+}
+
+.loi {
+    margin: 0;
+    color: #b2574e;
+    font-size: 12px;
+}
+
+@media (max-width: 700px) {
+    .bocuc {
+        grid-template-columns: 1fr;
+    }
+
+    .thanhben {
+        min-height: auto;
+        padding: 18px;
+    }
+
+    .thuonghieu p,
+    .thongtinca {
+        display: none;
+    }
+
+    .menu {
+        margin-top: 12px;
+    }
+
+    .muc {
+        padding: 10px 12px;
+    }
+
+    .menu .dangchon {
+        padding-left: 8px;
+    }
+
+    .thanhtren {
+        height: auto;
+        min-height: 66px;
+        padding: 15px 18px;
+        flex-wrap: wrap;
+    }
+
+    .thanhtren h1 {
+        font-size: 18px;
+    }
+
+    .taikhoan {
+        gap: 10px;
+    }
+
+    .ngay,
+    .thongbao {
+        display: none;
+    }
+
+    .noidung {
+        padding: 24px 18px;
+    }
+
+    .tieude {
+        flex-direction: column;
+    }
+
+    .the-daychuyen {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hangdau {
+        gap: 10px;
+    }
+
+    .nut {
+        width: fit-content;
+    }
+
+    .nutphu {
+        align-self: flex-start;
+    }
+}

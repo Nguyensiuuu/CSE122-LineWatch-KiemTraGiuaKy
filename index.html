@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LineWatch - Quản lý dây chuyền</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bocuc">
+        <aside class="thanhben">
+            <header class="thuonghieu">
+                <h2>LINEWATCH</h2>
+                <p>Theo dõi ca sản xuất</p>
+                <span class="vaitro">Quản trị viên</span>
+            </header>
+
+            <nav class="menu">
+                <span class="muc">Danh mục máy</span>
+                <a href="#danhsach" class="muc dangchon">Quản lý dây chuyền</a>
+                <span class="muc">Báo cáo dừng máy</span>
+            </nav>
+
+            <div class="thongtinca">
+                <p>Ca hiện tại</p>
+                <strong>Ca 2 · 14:00–22:00</strong>
+                <span>Tổ A · Xưởng 01</span>
+            </div>
+        </aside>
+
+        <div class="benphai">
+            <header class="thanhtren">
+                <h1>Quản lý dây chuyền</h1>
+                <div class="taikhoan">
+                    <label class="congtac">
+                        <span>Chế độ tối</span>
+                        <input type="checkbox" id="doimau">
+                        <span class="duonggat"></span>
+                    </label>
+                    <span class="ngay">04/10/2026</span>
+                    <span class="thongbao">3</span>
+                    <span class="nguoidung"><strong>NV</strong> Nguyên</span>
+                </div>
+            </header>
+
+            <main class="noidung" id="danhsach">
+                <section class="tieude">
+                    <div>
+                        <h2>Dây chuyền sản xuất</h2>
+                        <p>Quản lý cấu trúc dây chuyền và máy thuộc dây chuyền</p>
+                    </div>
+                    <button type="button" class="nut nuttao" id="nuttao">+ Tạo dây chuyền</button>
+                </section>
+
+                <section class="khungtao" id="khungtao" hidden>
+                    <h3>Tạo dây chuyền mới</h3>
+                    <form id="formtao">
+                        <div class="truong">
+                            <label for="madaychuyen">Mã dây chuyền</label>
+                            <input id="madaychuyen" type="text" placeholder="Ví dụ: L04" required>
+                        </div>
+                        <div class="truong">
+                            <label for="tendaychuyen">Tên dây chuyền</label>
+                            <input id="tendaychuyen" type="text" placeholder="Ví dụ: Lắp ráp" required>
+                        </div>
+                        <div class="truong">
+                            <label for="mamay">Mã các máy (ngăn cách bằng dấu phẩy)</label>
+                            <input id="mamay" type="text" placeholder="Ví dụ: M-401, M-402" required>
+                        </div>
+                        <div class="truong">
+                            <label for="trangthai">Trạng thái</label>
+                            <select id="trangthai">
+                                <option value="hoatdong">Đang hoạt động</option>
+                                <option value="tamdung">Tạm dừng</option>
+                            </select>
+                        </div>
+                        <p class="loi" id="loi"></p>
+                        <div class="hanhdong">
+                            <button type="submit" class="nut nuttao">Thêm dây chuyền</button>
+                            <button type="button" class="nut nutphu" id="huytao">Hủy</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="danhsach" id="cacdaychuyen">
+                    <article class="the-daychuyen">
+                        <div class="chitiet">
+                            <div class="hangdau">
+                                <h3>L01 · Đóng gói</h3>
+                                <span class="trangthai">Đang hoạt động</span>
+                            </div>
+                            <p class="soluong">4 máy</p>
+                            <p class="nhanmay">Máy thuộc dây chuyền</p>
+                            <div class="cacmay">
+                                <span>M-101</span>
+                                <span>M-102</span>
+                                <span>M-103</span>
+                                <span>M-104</span>
+                            </div>
+                        </div>
+                        <button type="button" class="nut nutphu">Chỉnh sửa</button>
+                    </article>
+
+                    <article class="the-daychuyen daychuyen-tamdung">
+                        <div class="chitiet">
+                            <div class="hangdau">
+                                <h3>L02 · Ép định hình</h3>
+                                <span class="trangthai tamdung">Tạm dừng</span>
+                            </div>
+                            <p class="soluong">4 máy</p>
+                            <p class="nhanmay">Máy thuộc dây chuyền</p>
+                            <div class="cacmay">
+                                <span>M-201</span>
+                                <span>M-202</span>
+                                <span>M-203</span>
+                                <span>M-204</span>
+                            </div>
+                        </div>
+                        <button type="button" class="nut nutphu">Chỉnh sửa</button>
+                    </article>
+
+                    <article class="the-daychuyen">
+                        <div class="chitiet">
+                            <div class="hangdau">
+                                <h3>L03 · Kiểm tra</h3>
+                                <span class="trangthai">Đang hoạt động</span>
+                            </div>
+                            <p class="soluong">3 máy</p>
+                            <p class="nhanmay">Máy thuộc dây chuyền</p>
+                            <div class="cacmay">
+                                <span>M-301</span>
+                                <span>M-302</span>
+                                <span>M-303</span>
+                            </div>
+                        </div>
+                        <button type="button" class="nut nutphu">Chỉnh sửa</button>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
