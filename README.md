@@ -34,4 +34,4 @@ README.md
 
 - **Figma:** https://www.figma.com/design/Hb7wMQduLWJliOzpJWGR98/BTL-14-LineWatch-%25E2%2580%2593-Full-UI-Prototype?node-id=2-2&p=f&t=fagY6XeNB9uPjHCF-0
 - **GitHub cá nhân:** https://github.com/Nguyensiuuu/CSE122-LineWatch-KiemTraGiuaKy
-- **Video YouTube:** Bổ sung sau khi quay.
+- **Video YouTube:** https://youtu.be/vpizwEpZ7Zk
