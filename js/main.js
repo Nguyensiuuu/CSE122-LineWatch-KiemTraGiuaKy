@@ -21,7 +21,6 @@ nutTao.addEventListener('click', () => {
 document.getElementById('huytao').addEventListener('click', () => {
     khungTao.hidden = true;
     formTao.reset();
-    loiTao.textContent = '';
 });
 
 formTao.addEventListener('submit', event => {
@@ -47,7 +46,6 @@ formTao.addEventListener('submit', event => {
         }
     }
 
-    // Dùng thẻ đầu tiên làm mẫu cho dây chuyền mới.
     const theMoi = danhSachDayChuyen.firstElementChild.cloneNode(true);
     const nhanTrangThai = theMoi.querySelector('.trangthai');
     theMoi.querySelector('h3').textContent = `${maDayChuyen} · ${tenDayChuyen}`;
@@ -67,5 +65,4 @@ formTao.addEventListener('submit', event => {
     danhSachDayChuyen.append(theMoi);
     formTao.reset();
     khungTao.hidden = true;
-    loiTao.textContent = '';
 });
